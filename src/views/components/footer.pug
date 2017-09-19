@@ -1,0 +1,41 @@
+footer.footer
+	div.container.footer__container
+		div.footer__info
+			div.footer__item.footer__item_copy
+				div.
+					© 2017, ООО «Визавик»
+				div.
+					ИНН: 9729110167
+				div.
+					ОГРН: 1177746727498
+			div.footer__item.footer__item_adress
+				div.
+					Адрес: г. Москва, Москва-Сити, Пресненская набережная 10, "Башня на набережной", 1 этаж, торговая зона
+				div
+					|сайт:
+					|
+					a(href="http://www.visavik.com" target="_blank").
+						www.visavik.com
+				div
+					|email:
+					|
+					a(href="mailto:kazan@visavik.com").
+						kazan@visavik.com
+			div.footer__item.footer__item_social
+				div.footer__social
+					div.footer__social-item
+						a(href="https://vk.com/visavik" target="_blank")
+							img(src="img/icon-vk.png", alt="")
+					div.footer__social-item
+						a(href="https://www.facebook.com/visavik/" target="_blank")
+							img(src="img/icon-fb.png", alt="")
+					div.footer__social-item
+						a(href="https://www.instagram.com/visavik_official/" target="_blank")
+							img(src="img/icon-inst.png", alt="")
+		div.footer__item.footer__item_contacts
+			div
+				a(href="tel:" + phoneAttr).footer__phone.
+					#{phone}
+			div
+				a(data-form="#modalFormSmall").footer__getcall.
+					Заказать звонок

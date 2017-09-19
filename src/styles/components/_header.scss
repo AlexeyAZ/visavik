@@ -1,0 +1,97 @@
+$header-logo-size: 110px;
+
+.header {
+	background-color: white;
+	position: relative;
+	z-index: 2;
+
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		flex-shrink: 0;
+
+		&_nav {
+			padding-left: 35px;
+			position: relative;
+			z-index: 1;
+		}
+
+		&_feedback {
+			flex-grow: 10;
+			text-align: right;
+		}
+	}
+	
+	&__logo {
+		display: block;
+		position: relative;
+		z-index: 1;
+
+		&:before {
+			content: "";
+			transform: translate(-50%, -50%);
+			background-color: white;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			height: 114px;
+			width: 114px;
+			z-index: -1;
+		}
+	}
+
+	&__logo-img {
+		transform: translateY(10px);
+		font-size: 5rem;
+		height: 1em;
+	}
+
+	&__nav {
+		display: flex;
+		font-size: 18px;
+
+		@include media(w1024) {
+			display: none;
+		}
+	}
+
+	&__nav-item {
+		margin-right: 1vw;
+	}
+
+	&__nav-link {
+		color: $blue;
+	}
+
+	&__city {
+		font-size: 16px;
+		color: $indigo-dark;
+
+		@include media(w1024) {
+
+			span {
+				display: block;
+			}
+		}
+
+		@include media(w768) {
+			display: none;
+		}
+	}
+
+	&__phone {
+		display: block;
+		color: black;
+		font-size: 22px;
+		line-height: 1;
+	}
+
+	&_getcall {
+		display: block;
+		font-size: 16px;
+	}
+}

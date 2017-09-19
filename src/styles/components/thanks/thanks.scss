@@ -1,0 +1,63 @@
+.thanks {
+	background-image: url("../img/sec1-bg.jpg");
+	padding: 9vw 0 11vw;
+	color: white;
+	text-align: center;
+	line-height: 1.2;
+	
+	&__heading {
+		font-size: 67px;
+		font-weight: bold;
+		margin-bottom: 0.1em;
+
+		@include media(w1024) {
+			font-size: 40px;
+			margin-bottom: 0.5em;
+
+			br {
+				display: none;
+			}
+		}
+
+		@include media(w768) {
+			font-size: 35px;
+		}
+	}
+
+	&__title {
+		font-size: 38px;
+
+		@include media(w1024) {
+			font-size: 30px;
+			margin-bottom: 1em;
+		}
+
+		@include media(w768) {
+			font-size: 25px;
+		}
+	}
+
+	&__subtitle {
+		font-size: 24px;
+		margin-bottom: 1.8em;
+
+		@include media(w1024) {
+			font-size: 20px;
+		}
+
+		@include media(w768) {
+			font-size: 15px;
+		}
+	}
+
+	&__btn {
+		font-size: 24px;
+
+		@include media(w768) {
+			font-size: 20px;
+			padding-left: 0;
+			padding-right: 0;
+			width: 100%;
+		}
+	}
+}

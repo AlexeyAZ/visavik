@@ -1,0 +1,6 @@
+mixin security(id, text)
+	div.security&attributes(attributes)
+		input(type="checkbox" checked required id=id).security__checkbox
+		label(for=id).security__title
+			span
+			|!{text}

@@ -1,0 +1,190 @@
+.sec7 {
+	background-color: $blue-light;
+	color: white;
+	padding: 5vw 0 4vw;
+
+	&__heading {
+		margin-bottom: 4vw;
+	}
+
+	&__steps {
+		display: flex;
+
+		@include media(w1024) {
+			display: block;
+			margin: 0 auto;
+			max-width: 480px;
+		}
+
+		@include media(w768) {
+			max-width: none;
+		}
+	}
+
+	&__steps-item {
+		position: relative;
+		text-align: center;
+		width: 25%;
+		z-index: 1;
+
+		&:after {
+			content: "";
+			background-image: url("../img/decor-arc.png");
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			position: absolute;
+			top: 40px;
+			left: 50%;
+			height: 51px;
+			width: 100%;
+			z-index: -1;
+
+			@include media(w1024) {
+				background-image: url("../img/decor-arc-vert.png");
+				top: 60%;
+				left: 60px;
+				height: 100%;
+				width: 40px;
+			}
+
+			@include media(w768) {
+				display: none;
+			}
+		}
+
+		&:nth-child(2) {
+
+			&:after {
+				transform: scale(-1);
+			}
+		}
+
+		&:last-child {
+
+			&:after {
+				display: none;
+			}
+		}
+
+		@include media(w1024) {
+			display: flex;
+			text-align: left;
+			margin-bottom: 60px;
+			width: auto;
+		}
+
+		@include media(w768) {
+			display: block;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+	}
+
+	&__steps-img-wrap {
+		display: inline-block;
+		position: relative;
+
+		@include media(w1024) {
+			flex-shrink: 0;
+		}
+	}
+
+	&__steps-img {
+		background-color: white;
+		border-radius: 50%;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		height: 146px;
+		width: 146px;
+	}
+
+	&__steps-icon {
+		height: 1em;
+
+		&_1 {
+			transform: translateX(-50%);
+			font-size: 8rem;
+			position: absolute;
+			bottom: -2px;
+			left: 50%;
+		}
+
+		&_2 {
+			transform: translateX(-50%);
+			position: absolute;
+			left: 55%;
+			bottom: -10px;
+		}
+
+		&_3 {
+			font-size: 5.6rem;
+			margin-top: 24px;
+		}
+
+		&_4 {
+			font-size: 8rem;
+			margin-top: -6px;
+			margin-right: -18px;
+		}
+	}
+
+	&__steps-number {
+		background-color: $red;
+		border-radius: 50%;
+		box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		font-size: 24px;
+		font-weight: 600;
+		position: absolute;
+		top: -5px;
+		right: -10px;
+		height: 50px;
+		width: 50px;
+	}
+
+	&__steps-number-cont {
+		transform: translate(-50%,-50%);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	}
+
+	&__steps-descr {
+
+		@include media(w1024) {
+			flex-shrink: 1;
+			margin-top: -10px;
+			padding-left: 60px;
+		}
+
+		@include media(w768) {
+			margin-top: 0;
+			padding-left: 0;
+		}
+	}
+
+	&__steps-title {
+		font-size: 30px;
+		font-weight: 600;
+		line-height: 1.3;
+		margin-bottom: 20px;
+
+		@include media(w1280) {
+			font-size: 25px;
+		}
+
+		@include media(w1024) {
+			font-size: 30px;
+		}
+	}
+
+	&__steps-text {
+		font-size: 17px;
+		padding: 0 20px;
+
+		@include media(w1024) {
+			padding: 0;
+		}
+	}
+}

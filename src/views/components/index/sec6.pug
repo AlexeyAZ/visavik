@@ -1,0 +1,9 @@
+section.sec.sec6
+	div.container
+		h4.fw-bold.ta-center.sec6__heading.
+			Постоянные партнёры
+		div.sec6__partners
+			- for(var i = 1; i <= 3; i++) {
+				div.sec6__partners-item
+					img(src="img/sec6-img" + i + ".png", alt="" class="sec6__partners-img_" + i).sec6__partners-img
+			- }

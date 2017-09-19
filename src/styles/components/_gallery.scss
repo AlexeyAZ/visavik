@@ -1,0 +1,284 @@
+$arrowGrad: rgba(255,255,255,0.9), rgba(255,255,255,0.01);
+
+.gallery {
+
+	a {
+		outline: none;
+	}
+
+	&__wrap {
+		position: relative;
+	}
+
+	&__arrow {
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 18vw;
+		z-index: 1;
+
+		@include media(w1024) {
+			width: 100px;
+		}
+
+		@include media(w768) {
+			width: 60px;
+		}
+
+		&:before {
+			content: "";
+			background-image: url("../img/gallery-arrow-right.png");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 39px 82px;
+			position: absolute;
+			top: 18vw;
+			height: 82px;
+			width: 39px;
+			z-index: 1;
+
+			@include media(w1366) {
+				top: 20vw;
+			}
+
+			@include media(w1024) {
+				top: 28vw;
+			}
+		}
+
+		&:after {
+			transition: $trans;
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+
+			@include media(w1024) {
+				display: none;
+			}
+		}
+
+		&_left {
+			left: 0;
+
+			&:before {
+				transform: translateY(-50%) scaleX(-1);
+				left: 8vw;
+
+				@include media(w1366) {
+					left: 2vw;
+				}
+
+				@include media(w768) {
+					left: 4vw;
+				}
+			}
+
+			&:after {
+				background-image: linear-gradient(to right, $arrowGrad);
+			}
+		}
+
+		&_right {
+			right: 0;
+
+			&:before {
+				transform: translateY(-50%);
+				right: 8vw;
+
+				@include media(w1366) {
+					right: 2vw;
+				}
+
+				@include media(w768) {
+					right: 4vw;
+				}
+			}
+
+			&:after {
+				background-image: linear-gradient(to left, $arrowGrad);
+			}
+		}
+
+		&:hover {
+
+			&:after {
+				opacity: 0;
+			}
+		}
+	}
+	
+	&__item {
+		outline: none;
+		padding-bottom: 80px;
+		height: 40vw;
+
+		@include media(w1366) {
+			padding-bottom: 100px;
+			height: 50vw;
+		}
+
+		@include media(w1024) {
+			padding-bottom: 60px;
+			height: auto;
+		}
+	}
+
+	&__item-container {
+		margin: 0 auto;
+		height: 100%;
+		
+		@include media(w1024) {
+			width: calc(100% - 100px);
+		}
+
+		@include media(w768) {
+			width: 100%;
+		}
+	}
+
+	&__img {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 100%;
+
+		@include media(w1024) {
+			height: 55vw;
+		}
+	}
+
+	&__video-block {
+		background-color: white;
+		box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+		padding: 25px 35px;
+		position: absolute;
+		bottom: -70px;
+		right: 0;
+		width: 385px;
+
+		@include media(w1024) {
+			margin: -28vw auto 0;
+			position: static;
+		}
+
+		@include media(w768) {
+			margin: -40px auto 0;
+			padding: 20px 25px;
+			width: 290px;
+		}
+	}
+
+	&__video-head {
+		font-weight: 600;
+		font-size: 1.6vw;
+		line-height: 1.2;
+
+		@include media(w1024) {
+			font-size: 32px;
+		}
+
+		@include media(w768) {
+			font-size: 24px;
+		}
+	}
+
+	&__video-name {
+		background-image: url("../img/decor-line-small.png");
+		background-position: left bottom;
+		background-repeat: no-repeat;
+		background-size: 75px 6px;
+		font-family: "PT Serif", Arial, Helvetica, sans-serif;
+		font-style: italic;
+		font-size: 15px;
+		margin-bottom: 2em;
+		padding-bottom: 20px;
+
+		@include media(w768) {
+			font-size: 11px;
+		}
+	}
+
+	&__video-link {
+		display: block;
+		color: $red;
+
+		&:hover {
+			color: $red-light;
+
+			.gallery__video-img {
+				
+				&:before {
+					opacity: 0;
+				}
+			}
+		}
+	}
+
+	&__video-img {
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: block;
+		position: relative;
+		height: 177px;
+
+		&:before {
+			transition: $trans;
+			content: "";
+			background-image: linear-gradient(to top, white 20%, rgba(0,0,0,0));
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+		}
+
+		@include media(w768) {
+			height: 130px;
+		}
+	}
+
+	.slick-dots {
+		text-align: center;
+
+		li {
+			display: inline-block;
+
+			&.slick-active {
+
+				button {
+
+					&:before {
+						content: "";
+						transform: translate(-50%, -50%);
+						background-color: $red;
+						border-radius: 50%;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						height: 16px;
+						width: 16px;
+					}
+				}
+			}
+		}
+
+		button {
+			background-color: transparent;
+			border: 3px solid red;
+			border-radius: 50%;
+			cursor: pointer;
+			outline: none;
+			font-size: 0;
+			margin: 0 12px;
+			padding: 0;
+			position: relative;
+			height: 28px;
+			width: 28px;
+		}
+	}
+}

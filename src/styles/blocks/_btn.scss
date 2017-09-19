@@ -1,0 +1,44 @@
+.btn {
+	transition: $trans;
+	outline: none;
+	border: none;
+	border-radius: $field-border-radius-pc;
+	cursor: pointer;
+	font-size: $field-font-size-pc;
+	font-weight: 600;
+	padding: $field-padding-pc;
+
+	&_main {
+		background-color: $red;
+		border: 2px solid $red;
+		color: white;
+
+		&:hover {
+			background-color: $red-light;
+			border-color: $red-light;
+		}
+	}
+
+	&_white {
+		background-color: white;
+		border: 2px solid white;
+		color: black;
+		font-weight: 600;
+
+		&:hover {
+			background-color: black;
+			border-color: black;
+			color: white;
+		}
+	}
+
+	@include media(w1024) {
+		padding: $field-padding-tablet;
+	}
+
+	@include media(w768) {
+		font-size: $field-font-size-mobile;
+		padding: $field-padding-mobile;
+	}
+	
+}

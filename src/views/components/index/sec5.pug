@@ -1,0 +1,19 @@
+section.sec.sec5
+	svg.icon-sec5-gift.sec5__gift
+		use(xlink:href="#sec5-gift")
+	div.container
+		h3.fw-bold.ta-center.sec5__heading.
+			Начните оформление визы сейчас<br> и получите подарок
+		div.sec5__form-wrap
+			form.sec5__form
+				div.sec5__form-filds
+					label.label.sec5__form-label
+						input(type="email" placeholder="E-mail" name="email").input
+					label.label.sec5__form-label
+						input(type="tel" placeholder="Телефон" name="phone" required).input
+					label.label.sec5__form-label
+						input(type="text" placeholder="Имя" name="name").input
+					label.label.sec5__form-label.sec5__form-label_btn
+						button.btn.btn_main.sec5__form-btn.
+							Хочу подарок
+				+security("gift", 'Нажимая на кнопку "Получить подарок", я даю согласие на обработку персональных данных и соглашаюсь c <a href="doc/politic.pdf" target="_blank">политикой конфиденциальности</a>')

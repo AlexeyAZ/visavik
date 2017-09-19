@@ -1,0 +1,26 @@
+- var sec7Steps = [["Бесплатная консультация", "Наши эксперты ответят на любой ваш вопрос и сформируют выгодное для вас предложение"], ["Формирование пакета документов", "Мы сделаем всё, чтобы ваши документы были идеальными, и консул прослезился от удивления"], ["Запись<br> в визовый центр", "Вы попадете на прием для сдачи документов в удобное время"], ["Получение<br> визы", "По любым возникающим вопросам мы продолжаем вас консультировать в процессе получения визы и даже после"]];
+
+section#work.sec.sec7
+	div.container
+		h3.fw-bold.ta-center.sec7__heading.
+			4 простых шага к визе в паспорте
+		div.sec7__steps
+			each item, index in sec7Steps
+				div.sec7__steps-item
+					div.sec7__steps-img-wrap
+						div.sec7__steps-img
+							- if (index === 1) {
+								img(src="img/sec7-img" + (index + 1) + ".png", alt="" class="sec7__steps-icon_" + (index + 1))
+							- } else {
+								svg(class="icon-sec7-img" + (index + 1) + " sec7__steps-icon_" + (index + 1)).sec7__steps-icon
+									use(xlink:href="#sec7-img" + (index + 1))
+							- }
+						
+						div.sec7__steps-number
+							div.sec7__steps-number-cont.
+								#{index + 1}
+					div.sec7__steps-descr
+						div.sec7__steps-title.
+							!{item[0]}
+						div.sec7__steps-text.
+							!{item[1]}

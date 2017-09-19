@@ -1,0 +1,60 @@
+.security {
+
+	&__checkbox {
+		//display: none;
+		visibility: hidden;
+		opacity: 0;
+		height: 0;
+		width: 0;
+
+		& + .security__title {
+			display: block;
+			font-size: 16px;
+			margin: 0 auto;
+			position: relative;
+			text-align: center;
+			max-width: 80%;
+
+			@include media(w1024) {
+				max-width: 90%;
+			}
+
+			@include media(w768) {
+				max-width: none;
+			}
+
+			span {
+				content: "";
+				display: inline-block;
+				border: 1px solid $indigo;
+				border-radius: 3px;
+				margin: 0 10px -2px 0;
+				position: relative;
+				height: 14px;
+				width: 14px;
+			}
+		}
+
+		&:checked {
+
+			& + .security__title {
+
+				span {
+
+					&:before {
+						content: "";
+						transform: translate(2px, -2px) rotate(-45deg);
+						border-left: 2px solid $indigo;
+						border-bottom: 2px solid $indigo;
+						position: absolute;
+						top: 0;
+						left: 0;
+						height: 8px;
+						width: 13px;
+						z-index: 1;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.input {
+	@include placeholder{
+		color: $indigo;
+		font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+	};
+	border: 2px solid $indigo;
+	border-radius: $field-border-radius-pc;
+	font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+	font-size: $field-font-size-pc;
+	color: black;
+	outline: none;
+	padding: $field-padding-pc;
+	width: 100%;
+
+	@include media(w1024) {
+		padding: $field-padding-tablet;
+	}
+
+	@include media(w768) {
+		font-size: $field-font-size-mobile;
+		padding: $field-padding-mobile;
+	}
+}

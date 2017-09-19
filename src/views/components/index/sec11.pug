@@ -1,0 +1,24 @@
+section#contacts.sec.sec11
+	//a(href="https://www.google.ru/maps/place/%D0%BF%D1%80.+%D0%A4%D0%B0%D1%82%D1%8B%D1%85%D0%B0+%D0%90%D0%BC%D0%B8%D1%80%D1%85%D0%B0%D0%BD%D0%B0,+1%D0%92,+%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C,+%D0%A0%D0%B5%D1%81%D0%BF.+%D0%A2%D0%B0%D1%82%D0%B0%D1%80%D1%81%D1%82%D0%B0%D0%BD,+420124/@55.815212,49.132644,17z/data=!3m1!4b1!4m5!3m4!1s0x415ead5a2f7e0111:0x674a08d2848c771e!8m2!3d55.815212!4d49.1348327" target="_blank").sec11__map
+		img(src="img/sec11-bg.jpg", alt="").sec11__map-img
+	div#map.sec11__map
+	div.container.sec11__container
+		div.sec11__content
+			h3.fw-bold.sec11__heading.
+				Как нас найти
+			div.sec11__contacts
+				a(href="").sec11__maplink
+					span.sec11__adress.
+						г. Москва, Москва-Сити,<br> Пресненская набережная 10,<br> "Башня на набережной",<br> 1 этаж, торговая зона
+					span.sec11__worktime.
+						График работы: ПН-ПТ с 10. до 19.30
+				a(href="tel:" + phoneAttr).sec11__phone.
+					#{phone}
+			div.sec11__contacts
+				a(href="").sec11__maplink
+					span.sec11__adress.
+						г. Казань, ул. Парижской коммуны,<br> д. 8, офис 104
+					span.sec11__worktime.
+						График работы: ПН-ПТ с 9.00 до 18.00
+				a(href="tel:" + phoneAttr).sec11__phone.
+					#{phone}

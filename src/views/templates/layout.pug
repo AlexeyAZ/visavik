@@ -1,0 +1,31 @@
+doctype html
+
+- var title = 'Project title';
+- var phone = "8 800 350-14-93";
+- var phoneAttr = "88003501493";
+
+block vars
+    
+html
+    head
+        meta(charset="utf-8")
+        meta(name="description", content="")
+        meta(name="viewport", content="width=device-width, initial-scale=1, minimal-ui")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        title #{title}
+        link(rel="icon" type="image/png" href="img/favicon.png" sizes="16x16")
+        link(rel="stylesheet", href="styles/vendor.css")
+        link(rel="stylesheet", href="styles/main.css")
+    </script>
+    body
+        include ../components/security
+        include ../components/icons
+        include ../components/svg
+        include ../components/modal
+        include ../components/header
+        block content
+        include ../components/footer
+        script(defer src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript")
+        script(defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsRIwAW5l4T994kgLTjZRbkNgfLjWk-as")
+        script(defer src="scripts/vendor.js")
+        script(defer src="scripts/app.js")

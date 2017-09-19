@@ -1,0 +1,132 @@
+.footer {
+	background-color: $gray-text-dark;
+	color: $footer-text;
+	font-size: 17px;
+	font-weight: 300;
+	padding: 40px 0 65px;
+
+	@include media(w768) {
+		padding: 30px 0;
+	}
+
+	a {
+		transition: $trans;
+		color: $footer-text;
+
+		&:hover {
+			color: white;
+		}
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+
+		@include media(w768) {
+			flex-flow: column;
+			text-align: center;
+		}
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		flex-shrink: 1;
+		flex-grow: 10;
+		padding-right: 6vw;
+
+		@include media(w1280) {
+			padding-right: 4vw;
+		}
+
+		@include media(w1024) {
+			flex-grow: 1;
+			flex-flow: column;
+			padding-right: 0;
+			flex-basis: 50%;
+		}
+
+		@include media(w768) {
+			order: 2;
+			flex-basis: auto;
+		}
+	}
+
+	&__item {
+
+		@include media(w1024) {
+			margin-bottom: 10px;
+		}
+
+		@include media(w768) {
+			margin-bottom: 20px;
+		}
+		
+		&_contacts {
+			flex-shrink: 0;
+
+			@include media(w1024) {
+				flex-basis: 50%;
+				text-align: right;
+			}
+			
+			@include media(w768) {
+				text-align: center;
+				flex-basis: auto;
+			}
+		}
+
+		&_copy {
+			flex-shrink: 0;
+
+			@include media(w1024) {
+				flex-shrink: 1;
+			}
+
+			@include media(w768) {
+				order: 3;
+			}
+		}
+
+		&_adress {
+			flex-shrink: 1;
+			padding-left: 10px;
+
+			@include media(w1024) {
+				padding-left: 0;
+				order: 3;
+			}
+
+			@include media(w768) {
+				order: 2;
+			}
+		}
+
+		&_social {
+			flex-shrink: 0;
+
+			@include media(w1024) {
+				flex-shrink: 1;
+				order: 2;
+			}
+
+			@include media(w768) {
+				order: 1;
+			}
+		}
+	}
+
+	&__social-item {
+		display: inline-block;
+		margin: 0 5px;
+	}
+
+	&__phone {
+		font-size: 24px;
+		font-weight: 600;
+	}
+
+	&__getcall {
+		border-bottom: 2px dotted currentColor;
+	}
+}

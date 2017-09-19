@@ -1,0 +1,150 @@
+.sec8 {
+	background-color: $blue-light;
+	padding-top: 20px;
+
+	&__content {
+		overflow: hidden;
+		position: relative;
+
+		@include media(w768) {
+			margin-left: -$side-padding-mobile;
+			margin-right: -$side-padding-mobile;
+		}
+	}
+
+	&__top {
+		background-color: white;
+		border-radius: 10px 10px 0 0;
+		padding: 80px 130px 70px;
+
+		@include media(w1280) {
+			padding: 80px 80px 70px;
+		}
+
+		@include media(w1024) {
+			padding: 50px 60px 100px;
+		}
+
+		@include media(w768) {
+			border-radius: 0;
+			padding: 30px $side-padding-mobile;
+		}
+	}
+
+	&__heading {
+		line-height: 1.2;
+		margin-bottom: 1em;
+
+		@include media(w1280) {
+
+			br {
+				display: none;
+			}
+		}
+
+		@include media(w768) {
+			text-align: center;
+		}
+	}
+
+	&__row {
+		display: flex;
+
+		@include media(w768) {
+			display: block;
+		}
+	}
+
+	&__col {
+		width: 45%;
+
+		@include media(w768) {
+			width: auto;
+		}
+	}
+
+	&__list {
+		
+	}
+
+	&__list-item {
+		display: flex;
+		margin-bottom: 25px;
+		padding-right: 30px;
+	}
+
+	&__list-img {
+		flex-shrink: 0;
+	}
+
+	&__list-text {
+		flex-shrink: 1;
+		font-size: 20px;
+		line-height: 1.2;
+		padding-left: 20px;
+
+		@include media(w768) {
+			font-size: 17px;
+		}
+	}
+
+	&__bottom {
+		background-color: $blue-lightest;
+		border-radius: 0 0 10px 10px;
+		padding: 60px 130px 100px;
+
+		@include media(w1280) {
+			padding: 40px 50px 40px;
+		}
+
+		@include media(w768) {
+			border-radius: 0;
+			text-align: center;
+			padding: 30px $side-padding-mobile;
+		}
+	}
+
+	&__bottom-container {
+		display: flex;
+		align-items: center;
+
+		@include media(w1024) {
+			display: block;
+		}
+	}
+
+	&__bottom-text {
+		color: white;
+		font-size: 27px;
+		font-weight: bold;
+		line-height: 1.2;
+		margin-right: 40px;
+
+		@include media(w1024) {
+			margin-bottom: 20px;
+			margin-right: 0;
+		}
+
+		@include media(w768) {
+			font-size: 21px;
+		}
+	}
+
+	&__women {
+		font-size: 25vw;
+		position: absolute;
+		bottom: 3vw;
+		right: -8vw;
+		height: 1em;
+
+		@include media(w1024) {
+			font-size: 30vw;
+			right: auto;
+			left: 60vw;
+		}
+
+		@include media(w768) {
+			display: none;
+		}
+	}
+}

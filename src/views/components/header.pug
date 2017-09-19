@@ -1,0 +1,25 @@
+- var navItems = [["Главная", "main"], ["Отзывы", "reviews"], ["Схема работы", "work"],["Стоимость услуг", "prices"],["Контакты", "contacts"],];
+
+header.header
+	div.container.header__container
+		div.header__item
+			a(href="/").header__logo
+				svg.icon-header-logo.header__logo-img
+					use(xlink:href="#header-logo")
+		div.header__item.header__item_nav
+			div.header__city
+				div
+					|Ваш город:
+					|
+					span.
+						Казань
+			div.header__nav
+				each item in navItems
+					div.header__nav-item
+						a(href="#" + item[1]).header__nav-link.anim-link-line.
+							#{item[0]}
+		div.header__item.header__item_feedback
+			a(href="tel:" + phoneAttr).header__phone.
+				#{phone}
+			a(data-form="#modalFormSmall").header__getcall.anim-link-line.
+				Заказать звонок

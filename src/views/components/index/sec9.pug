@@ -1,0 +1,26 @@
+- var sec9List = [["Бронирование<br> номера в отеле", "от 700 Р"], ["Бронирование<br> авиабилетов", "от 700 Р"], ["Заполение анкеты<br> на визу", "от 500 Р"], ["Перевод документов<br> при необходимости", "от 500 Р"], ["Тариф на<br> мед.страховку", "0,7 $ в сут."], ["Спонсорское<br> письмо и пр.", "от 50 Р"], ["Фото по<br> стандартам", "200 Р"]];
+
+section#prices.sec.sec9
+	div.container
+		h2.fw-bold.sec9__heading.
+			Стоимость услуг
+		p.fs-s.sec9__title.
+			Вы можете заказать полный пакет услуг и увеличить шансы<br> получения визы до 99% или воспользоваться отдельными услугами
+		div.sec9__list
+			each item, index in sec9List
+				div.sec9__list-item
+					div.sec9__list-card
+						div.sec9__list-img
+							svg(class="icon-sec9-icon" + (index + 1) + " sec9__list-icon_" + (index + 1)).sec9__list-icon
+								use(xlink:href="#sec9-icon" + (index + 1))
+						div.sec9__list-descr.
+							!{item[0]}
+						div.sec9__list-price.
+							!{item[1]}
+		div.sec9__bottom
+			a(data-form="#modalForm").btn.btn_main.sec9__bottom-btn.
+				Оставить заявку
+			p.
+				*Полный пакет услуг меняется в зависимости от страны поездки
+	div.sec9__bg-wrap
+		img(src="img/sec9-bg.png", alt="").sec9__bg

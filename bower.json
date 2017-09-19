@@ -1,0 +1,22 @@
+{
+  "name": "new_project",
+  "version": "1.0.0",
+  "authors": [
+    ""
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "reset-css": "^2.2.0",
+    "slick-carousel": "^1.7.1",
+    "webshim": "^1.16.0",
+    "inputmask": "jquery.inputmask#^3.3.7"
+  }
+}

@@ -1,0 +1,25 @@
+.anim {
+
+	&-link-line {
+		overflow: hidden;
+		position: relative;
+
+		&:after {
+			transition: $trans;
+			content: "";
+			background-color: currentColor;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 1px;
+			width: 0;
+		}
+
+		&:hover {
+
+			&:after {
+				width: 100%;
+			}
+		}
+	}
+}

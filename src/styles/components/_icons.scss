@@ -1,0 +1,36 @@
+
+$icon-close-size: 27px;
+
+.icon-close {
+	cursor: pointer;
+	height: $icon-close-size;
+	width: $icon-close-size;
+
+	&:before,
+	&:after {
+		content: "";
+		transition: $trans;
+		background-color: $indigo;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		height: 100%;
+		width: 3px;
+	}
+
+	&:before {
+		transform: rotate(45deg);
+	}
+
+	&:after {
+		transform: rotate(-45deg);
+	}
+
+	&:hover {
+
+		&:before,
+		&:after {
+			background-color: $red;
+		}
+	}
+}

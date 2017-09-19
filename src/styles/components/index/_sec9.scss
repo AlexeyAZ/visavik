@@ -1,0 +1,121 @@
+.sec9 {
+	background-color: $blue-light;
+	color: white;
+	text-align: center;
+	overflow: hidden;
+	padding: 3vw 0 0;
+
+	@include media(w768) {
+		padding-bottom: 5vw;
+
+		br {
+			display: none;
+		}
+	}
+
+	&__heading {
+		margin-bottom: 0;
+	}
+
+	&__title {
+		margin-bottom: 1.5em;
+	}
+
+	&__list {
+		display: flex;
+		flex-flow: wrap;
+		justify-content: center;
+		margin-bottom: 40px;
+
+		@include media(w1024) {
+			margin: 0 auto;
+			max-width: 574px;
+		}
+
+		@include media(w768) {
+			display: block;
+			max-width: 280px;
+		}
+	}
+
+	&__list-item {
+		color: black;
+		margin-bottom: 20px;
+		padding: 0 5px;
+		width: 25%;
+
+		@include media(w1024) {
+			width: 50%;
+		}
+
+		@include media(w768) {
+			width: auto;
+		}
+	}
+
+	&__list-card {
+		background-color: white;
+		border-radius: 10px;
+		padding: 50px 0 30px;
+	}
+
+	&__list-img {
+		margin-bottom: 35px;
+		height: 110px;
+	}
+
+	&__list-icon {
+		height: 100%;
+
+		&_3 {
+			font-size: 7rem;
+			height: 1em;
+		}
+
+		&_4 {
+			font-size: 6.4rem;
+			height: 1em;
+		}
+	}
+
+	&__list-descr {
+		font-size: 24px;
+		line-height: 1.2;
+		margin-bottom: 10px;
+
+		@include media(w1280) {
+			font-size: 22px;
+		}
+	}
+
+	&__list-price {
+		font-size: 42px;
+		font-weight: 600;
+	}
+
+	&__bottom {
+		text-align: center;
+		color: black;
+	}
+
+	&__bottom-btn {
+		margin-bottom: 20px;
+	}
+
+	&__bg-wrap {
+
+		@include media(w1024) {
+			margin: 0 -24vw;
+		}
+
+		@include media(w768) {
+			display: none;
+		}
+	}
+
+	&__bg {
+		margin-top: -18vw;
+		display: block;
+		width: 100%;
+	}
+}

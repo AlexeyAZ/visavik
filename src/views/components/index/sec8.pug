@@ -1,0 +1,42 @@
+- var sec8List = ["Какие документы необходимо предоставить для получения долгосрочной студенческой визы?", "Является ли электронный билет основанием для поездки в США?", "Сколько времени занимает оформление визы?", "Как угадать настроение консула? :)", "Можно ли пересечь границу на самокате? ^_^"];
+
+section.sec.sec8
+	div.container
+		div.sec8__content
+			div.sec8__top
+				h2.fw-bold.sec8__heading.
+					Наши эксперты знают ответ<br> на вопрос любой сложности
+				div.sec8__row
+					div.sec8__col
+						div.sec8__list
+							- for (var i = 0; i < 2; i++) {
+								div.sec8__list-item
+									div.sec8__list-img
+										img(src="img/sec8-icon" + (i + 1) + ".png")
+									div.sec8__list-text.
+										#{sec8List[i]}
+							- }
+					div.sec8__col
+						div.sec8__list
+							- for (var i = 2; i < sec8List.length; i++) {
+								div.sec8__list-item
+									div.sec8__list-img
+										img(src="img/sec8-icon" + (i + 1) + ".png")
+									div.sec8__list-text.
+										#{sec8List[i]}
+							- }
+
+					//each item, index in sec8List
+						div.sec8__list-item
+							div.sec8__list-img
+								img(src="img/sec8-icon" + (index + 1) + ".png")
+							div.sec8__list-text.
+								#{item}
+			div.sec8__bottom
+				div.sec8__bottom-container
+					div.sec8__bottom-text.
+						Закажите звонок и получите<br> бесплатную консультацию
+					a(data-form="#modalForm").btn.btn_main.
+						Заказать звонок
+			svg.icon-sec8-women.sec8__women
+				use(xlink:href="#sec8-women")

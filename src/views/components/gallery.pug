@@ -1,0 +1,26 @@
+//- var arr = [["mainImg", "title", "name", "videoImg", "videoSrc"]];
+//- mixin gallery(arr, galleryClass)
+//- 	div.gallery__wrap
+//- 		div.gallery__arrow.gallery__arrow_left
+//- 		div.gallery__arrow.gallery__arrow_right
+//- 		div(class=galleryClass).gallery
+//- 			each item in arr
+//- 				//div.gallery__item
+//- 				div.gallery__item
+//- 					div.gallery__item-container.container
+//- 						div.gallery__img(style="background-image:url(img/" + item[0] + ")")
+//- 						div.gallery__video-block
+//- 							p.gallery__video-head.
+//- 								#{item[1]}
+//- 							p.gallery__video-name.
+//- 								#{item[2]}
+//- 							a(data-form="#modalVideo").gallery__video-link
+//- 								span(style="background-image:url(img/" + item[3] + ")").gallery__video-img
+//- 								span.
+//- 									Читать отзыв целиком
+
+mixin gallery(galleryClass)
+	div.gallery__wrap
+		div.gallery__arrow.gallery__arrow_left
+		div.gallery__arrow.gallery__arrow_right
+		div(class=galleryClass).gallery

@@ -1,0 +1,19 @@
+.sec4 {
+	background-color: white;
+	padding: 5vw 0 2vw;
+	z-index: 1;
+
+	&__heading {
+		line-height: 1.2;
+		margin-bottom: 0.2em;
+	}
+
+	&__title {
+		font-size: 30px;
+		margin-bottom: 1em;
+
+		@include media(w768) {
+			font-size: 20px;
+		}
+	}
+}

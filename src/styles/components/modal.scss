@@ -1,0 +1,176 @@
+.modal {
+	transition: $trans;
+	background-color: rgba(0,0,0,0.5);
+	overflow: auto;
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+
+	&_open {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&__content {
+		transform: translate(-50%, 0);
+		box-shadow: 0 0 30px rgba(0,0,0,0.2);
+		background-color: white;
+		border-radius: 10px;
+		margin: 20px 0;
+		padding: 40px;
+		position: absolute;
+		left: 50%;
+
+		@include media(w1366) {
+			padding: 40px 40px 20px;
+		}
+
+		@include media(w1024) {
+			padding:  40px 20px 20px;
+		}
+	}
+
+	&__content-close-btn {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+
+	&__form-container {
+		width: 440px;
+
+		@include media(w1024) {
+			width: 260px;
+		}
+	}
+
+	&__form-heading {
+		font-size: 32px;
+		font-weight: bold;
+		line-height: 1.2;
+		margin-bottom: 20px;
+
+		@include media(w1024) {
+			font-size: 22px;
+		}
+	}
+
+	&__form-label {
+		margin-bottom: 20px;
+
+		@include media(w1366) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__form-btn {
+		width: 100%;
+	}
+
+	&__form-security {
+
+		.security__title {
+			color: $indigo;
+			text-align: left;
+			max-width: none;
+
+			@include media(w1024) {
+				font-size: 14px;
+			}
+		}
+	}
+
+	&__video-review {
+		width: 680px;
+
+		@include media(w768) {
+			width: calc(100vw - 80px);
+		}
+	}
+
+	&__video-img {
+		display: block;
+		width: 100%;
+	}
+
+	&__video-head {
+		font-size: 24px;
+		font-weight: 600;
+		
+		@include media(w768) {
+			font-size: 20px;
+		}
+	}
+
+	&__video-name {
+		background-image: url("../img/decor-line-small-blue.png");
+		background-position: left bottom;
+		background-size: 76px 6px;
+		background-repeat: no-repeat;
+		font-family: "PT Serif", Arial, Helvetica, sans-serif;
+		font-style: italic;
+		font-size: 15px;
+		margin-bottom: 1em;
+		padding-bottom: 20px;
+
+		@include media(w768) {
+			font-size: 14px;
+		}
+	}
+
+	&__video-text {
+		font-size: 17px;
+		font-weight: 300;
+
+		p {
+			margin-bottom: 1em;
+		}
+
+		@include media(w768) {
+			font-size: 14px;
+		}
+	}
+
+	&__video-wrap {
+		margin-bottom: 1em;
+	}
+
+	&__video-frame {
+		height: 348px;
+		width: 100%;
+
+		@include media(w500) {
+			height: 200px;
+		}
+	}
+
+	&__video-doc {
+		display: flex;
+	}
+
+	&__video-doc-icon {
+		margin-right: 16px;
+	}
+
+	&__video-doc-title {
+		color: $blue;
+		font-size: 16px;
+		font-weight: 600;
+
+		@include media(w768) {
+			font-size: 14px;
+		}
+	}
+
+	&__video-doc-size {
+		color: $gray-text-lightest;
+		font-family: "PT Serif", Arial, Helvetica, sans-serif;
+		font-style: italic;
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    color: $gray-text-dark;
+    font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+    position: relative;
+    line-height: 1.5;
+    min-width: 320px;
+}
+
+.body-overflow {
+    overflow: hidden;
+}

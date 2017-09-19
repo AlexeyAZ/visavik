@@ -1,0 +1,23 @@
+section.sec.sec10
+	div.container
+		h3.fw-bold.sec10__heading.
+			Откройте для себя мир<br> путешествий без границ
+		p.sec10__title.
+			Оставьте заявку и получите подарок
+		div.sec10__form-wrap
+			form.sec10__form
+				label.label.sec10__form-label
+					input(type="email" name="email" placeholder="E-mail").input
+				label.label.sec10__form-label
+					input(type="tel" name="phone" placeholder="Телефон" required).input
+				label.label.sec10__form-label
+					input(type="text" name="name" placeholder="Имя").input
+				label.label.sec10__form-label
+					button.btn.btn_main.sec10__btn.
+						Хочу подарок
+				+security("sec10", 'Нажимая на кнопку "Получить подарок", я даю согласие на обработку персональных данных и соглашаюсь c <a href="doc/politic.pdf" target="_blank">политикой конфиденциальности</a>')(class="sec10__security")
+	div.sec10__photos
+		- for (var i = 0; i < 5; i++) {
+			div(class="sec10__photo_" + (i + 1)).sec10__photo
+				img(src="img/sec10-img" + (i + 1) + ".jpg", alt="")
+		- }

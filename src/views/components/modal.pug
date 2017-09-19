@@ -1,0 +1,64 @@
+div#modalForm.modal
+	div.modal__content
+		div.modal__content-close-btn.js-close-modal
+			+iconClose()
+		div.modal__form-container
+			div.modal__form-heading.
+				Оставьте заявку,<br> наши специалисты свяжутся<br> с вами в течение 10 минут 
+			//Оставьте заявку<br> и начните оформление<br> долгосрочной визы
+			form.modal__form
+				label.label.modal__form-label
+					input(type="email" name="email" placeholder="E-mail").input
+				label.label.modal__form-label
+					input(type="tel" name="phone" placeholder="Телефон" required).input
+				label.label.modal__form-label
+					input(type="text" name="name" placeholder="Имя").input
+				label.label.modal__form-label
+					button.btn.btn_main.modal__form-btn.
+						Оставить заявку
+				+security("formModal", 'Нажимая на кнопку "Оставить заявку", я даю согласие на обработку персональных данных и соглашаюсь c <a href="doc/politic.pdf" target="_blank">политикой конфиденциальности</a>')(class="modal__form-security")
+div#modalFormSmall.modal
+	div.modal__content
+		div.modal__content-close-btn.js-close-modal
+			+iconClose()
+		div.modal__form-container
+			div.modal__form-heading.
+				Оставьте заявку,<br> наши специалисты свяжутся<br> с вами в течение 10 минут
+			form.modal__form
+				input(type="hidden" name="place")
+				input(type="hidden" name="time")
+				//label.label.modal__form-label
+					input(type="email" name="email" placeholder="E-mail").input
+				label.label.modal__form-label
+					input(type="tel" name="phone" placeholder="Телефон" required).input
+				label.label.modal__form-label
+					button.btn.btn_main.modal__form-btn.
+						Оставить заявку
+				+security("formModalSmall", 'Нажимая на кнопку "Оставить заявку", я даю согласие на обработку персональных данных и соглашаюсь c <a href="doc/politic.pdf" target="_blank">политикой конфиденциальности</a>')(class="modal__form-security")
+div#modalVideo.modal
+	div.modal__content
+		div.modal__content-close-btn.js-close-modal
+			+iconClose()
+		div.modal__video-review
+			div.modal__video-head.
+				Елена Летучая
+			div.modal__video-name.
+				Ведущая телешоу «Ревизорро»
+			div.modal__video-text
+				p.
+					За время совместной работы Визовый центр «Visavik» зарекомендовал себя как надежный партнер по оказанию международной визовой поддержки для сотрудников и руководства АО «ОЭЗ ППТ «Алабуга».
+				p.
+					Выражаем Вам нашу искреннюю благодарность и глубокую признательность за плодотворное сотрудничество. Мы высоко ценим оказываемую Вами квалифицированную поддержку, ответственность и высокий профессионализм
+			div.modal__video-wrap
+				iframe(src="" frameborder="0" allowfullscreen).modal__video-frame
+				img.modal__video-img
+			//a(href="").modal__video-doc
+				div.modal__video-doc-icon
+					img(src="img/icon-pdf.jpg", alt="")
+				div.modal__video-doc-descr
+					div.modal__video-doc-title
+					div.modal__video-doc-size
+						|Размер:
+						|
+						span.
+							305 КБт

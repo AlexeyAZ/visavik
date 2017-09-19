@@ -1,0 +1,24 @@
+- var cityes = ["АВСТРАЛИЯ","АВСТРИЯ","БЕЛЬГИЯ","БОЛГАРИЯ","КАНАДА","ЧЕХИЯ","КИТАЙ","ХОРВАТИЯ","КИПР","ДАНИЯ","ОАЭ","ЭСТОНИЯ","ФИНЛЯНДИЯ","ФРАНЦИЯ","ГЕРМАНИЯ","ГРЕЦИЯ","ВЕНГРИЯ","ИСЛАНДИЯ","ИНДИЯ","ИРЛАНДИЯ","ИТАЛИЯ","ЯПОНИЯ","ЛАТВИЯ","ЛИТВА","МАЛЬТА","МЕКСИКА","НИДЕРЛАНДЫ","НОРВЕГИЯ","ПОЛЬША","ПОРТУГАЛИЯ","РУМЫНИЯ","ШРИ-ЛАНКА","СИНГАПУР","СЛОВАКИЯ","СЛОВЕНИЯ","ИСПАНИЯ","ШВЕЦИЯ","ШВЕЙЦАРИЯ","ТАИЛАНД","ТАЙВАНЬ","ТУРКМЕНИСТАН","АНГЛИЯ","США","ВЬЕТНАМ","НОВАЯ ЗЕЛАНДИЯ"];
+
+section#main.sec.sec1
+	div.container
+		h1.fw-bold.sec1__heading.
+			Оформление визы<br> в любую страну
+		p.fs-l.sec1__title.
+			Лучший способ открыть для себя самые<br> выгодные путешествия по всему миру
+		div.sec1__form-wrap
+			form.sec1__form
+				label.label.sec1__label
+					select(type="text" placeholder="Куда летим" name="place").input.sec1__input.sec1__input_place
+						option(disabled selected).
+							Куда летим
+						each item in cityes
+							option
+								=item
+				label.label.sec1__label.sec1__label_line
+					input(onfocus="(this.type='date')" onblur="(this.type='text')" type="text" placeholder="Когда летим" name="time").input.sec1__input.sec1__input_time
+				label.label.sec1__label.sec1__label_btn
+					a(data-form="#modalFormSmall").btn.btn_main.sec1__btn.
+						Оставить заявку
+	svg.icon-sec1-people.sec1__people
+		use(xlink:href="#sec1-people")

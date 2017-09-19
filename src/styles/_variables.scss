@@ -1,0 +1,40 @@
+$trans: all 0.3s ease;
+$side-padding-pc: 30px;
+$side-padding-tablet: 18px;
+$side-padding-mobile: 11px;
+$max-width-value: 1150px;
+$max-width: calc(#{$max-width-value} + 2 * #{$side-padding-pc});
+
+$field-font-size-pc: 21px;
+$field-font-size-mobile: 17px;
+$field-border-radius-pc: 50px;
+$field-padding-pc: 25px 35px;
+$field-padding-tablet: 20px 30px;
+$field-padding-mobile: 15px 25px;
+
+$blue-lightest: #91cee2;
+$blue-light: #099bd3;
+$blue: #2c73c9;
+
+$red-light: #f26c6f;
+$red: #ea5154;
+
+$indigo-dark: #96a2a9;
+$indigo: #c1ccd3;
+
+
+$gray-text-lightest: #a0a0a0;
+$gray-text: #21272b;
+$gray-text-light: #2c3840;
+$gray-text-dark: #262626;
+
+$footer-text: #bababa;
+
+
+// $color-main--lightest: #CBF3BF;
+// $color-main--lighten:  #ACEF97;
+// $color-main--light:    #74EA4F;
+// $color-main:           #3FD411;
+// $color-main--dark:     #39BA11;
+// $color-main--darken:   #329F11;
+// $color-main--darkest:  #184B09;
