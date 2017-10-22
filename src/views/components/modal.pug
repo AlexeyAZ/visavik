@@ -6,7 +6,7 @@ div#modalForm.modal
 			div.modal__form-heading.
 				Оставьте заявку,<br> наши специалисты свяжутся<br> с вами в течение 10 минут 
 			//Оставьте заявку<br> и начните оформление<br> долгосрочной визы
-			form.modal__form
+			form(onsubmit="yaCounter46336077.reachGoal('form'); return true;").modal__form
 				label.label.modal__form-label
 					input(type="email" name="email" placeholder="E-mail").input
 				label.label.modal__form-label
@@ -23,14 +23,16 @@ div#modalFormSmall.modal
 			+iconClose()
 		div.modal__form-container
 			div.modal__form-heading.
-				Оставьте заявку,<br> наши специалисты свяжутся<br> с вами в течение 10 минут
-			form.modal__form
+				Оставьте заявку, чтобы скачать список документов для оформления визы 
+			form(onsubmit="yaCounter46336077.reachGoal('form'); return true;").modal__form
 				input(type="hidden" name="place")
 				input(type="hidden" name="time")
-				//label.label.modal__form-label
+				label.label.modal__form-label
 					input(type="email" name="email" placeholder="E-mail").input
 				label.label.modal__form-label
 					input(type="tel" name="phone" placeholder="Телефон" required).input
+				label.label.modal__form-label
+					input(type="text" name="name" placeholder="Имя").input
 				label.label.modal__form-label
 					button.btn.btn_main.modal__form-btn.
 						Оставить заявку

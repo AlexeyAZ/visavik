@@ -7,7 +7,9 @@ section#main.sec.sec1
 		p.fs-l.sec1__title.
 			Лучший способ открыть для себя самые<br> выгодные путешествия по всему миру
 		div.sec1__form-wrap
-			form.sec1__form
+			p.fs-s.sec1__form-title.
+				Скачайте список документов, необходимых для получения визы
+			form(onsubmit="yaCounter46336077.reachGoal('form'); return true;").sec1__form
 				label.label.sec1__label
 					select(type="text" placeholder="Куда летим" name="place").input.sec1__input.sec1__input_place
 						option(disabled selected).
@@ -19,6 +21,8 @@ section#main.sec.sec1
 					input(onfocus="(this.type='date')" onblur="(this.type='text')" type="text" placeholder="Когда летим" name="time").input.sec1__input.sec1__input_time
 				label.label.sec1__label.sec1__label_btn
 					a(data-form="#modalFormSmall").btn.btn_main.sec1__btn.
-						Оставить заявку
+						Скачать
+					//span.sec1__sublabel.
+						Скачайте список необходимых документов
 	svg.icon-sec1-people.sec1__people
 		use(xlink:href="#sec1-people")

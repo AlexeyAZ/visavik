@@ -86,7 +86,8 @@
 	}
 
 	&__video-review {
-		width: 680px;
+		width: 88vw;
+		max-width: 1024px;
 
 		@include media(w768) {
 			width: calc(100vw - 80px);

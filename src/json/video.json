@@ -1,5 +1,50 @@
 [
 	{
+		"imgSrc": "sec4-img5.jpg",
+		"head": "Устройте свадьбу в Греции и пригласите всех друзей и родственников",
+		"name": "как Лена летучая - телеведущая",
+		"text": [
+			""
+		],
+		"videoImg": "sec4-video-bg.jpg",
+		"photoImg": "sec4-photo-bg5.jpg",
+		"doc": {
+			"title": "Благодарственное письмо",
+			"size": "305 КБт",
+			"link": "doc.pdf"
+		}
+	},
+	{
+		"imgSrc": "sec4-img7.jpg",
+		"head": "Отправляйтесь в коммандировку в Париж",
+		"name": "Как Давлет - бизнесмен, блоггер",
+		"text": [
+			""
+		],
+		"videoImg": "sec4-video-bg.jpg",
+		"photoImg": "sec4-photo-bg7.jpg",
+		"doc": {
+			"title": "Благодарственное письмо",
+			"size": "305 КБт",
+			"link": "doc.pdf"
+		}
+	},
+	{
+		"imgSrc": "sec4-img8.jpg",
+		"head": "Оформите визу после 4х отказов и проведите отпуск в Европе",
+		"name": "Как Жаклин - диджей, видеоблоггер",
+		"text": [
+			""
+		],
+		"videoImg": "sec4-video-bg.jpg",
+		"photoImg": "sec4-photo-bg8.jpg",
+		"doc": {
+			"title": "Благодарственное письмо",
+			"size": "305 КБт",
+			"link": "doc.pdf"
+		}
+	},
+	{
 		"imgSrc": "sec4-img1.jpg",
 		"head": "Оторвитесь на концерте любимой группы в Великобритании",
 		"name": "Как Мария – студентка",
@@ -20,66 +65,6 @@
 		}
 	},
 	{
-		"imgSrc": "sec4-img2.jpg",
-		"head": "Посетите Диснейленд в Париже",
-		"name": "Как Каte Traveller - видеоблогер",
-		"text": [
-			""
-		],
-		"videoImg": "sec4-video-bg.jpg",
-		"videoLink": "yw5af0Wgyu0",
-		"doc": {
-			"title": "Благодарственное письмо",
-			"size": "305 КБт",
-			"link": "doc.pdf"
-		}
-	},
-	{
-		"imgSrc": "sec4-img5.jpg",
-		"head": "Устройте свадьбу в Греции и пригласите всех друзей и родственников",
-		"name": "как Лена летучая - телеведущая",
-		"text": [
-			""
-		],
-		"videoImg": "sec4-video-bg.jpg",
-		"photoImg": "sec4-photo-bg5.jpg",
-		"doc": {
-			"title": "Благодарственное письмо",
-			"size": "305 КБт",
-			"link": "doc.pdf"
-		}
-	},
-	{
-		"imgSrc": "sec4-img3.jpg",
-		"head": "Участвуйте в фестивале музыки и искусства в Италии",
-		"name": "Как Рустам - стрит арт-художник",
-		"text": [
-			""
-		],
-		"videoImg": "sec4-video-bg.jpg",
-		"videoLink": "sSuS9LQFPrE",
-		"doc": {
-			"title": "Благодарственное письмо",
-			"size": "305 КБт",
-			"link": "doc.pdf"
-		}
-	},
-	{
-		"imgSrc": "sec4-img4.jpg",
-		"head": "Проведите отпуск в Барселоне",
-		"name": "как Ася - инста блогер",
-		"text": [
-			""
-		],
-		"videoImg": "sec4-video-bg.jpg",
-		"videoLink": "sDVEcG9dS94",
-		"doc": {
-			"title": "Благодарственное письмо",
-			"size": "305 КБт",
-			"link": "doc.pdf"
-		}
-	},
-	{
 		"imgSrc": "sec4-img6.jpg",
 		"head": "Слетайте в Люксембург на выходные",
 		"name": "как Максим Шарафутдинов",
@@ -88,6 +73,21 @@
 		],
 		"videoImg": "sec4-video-bg.jpg",
 		"photoImg": "sec4-photo-bg6.jpg",
+		"doc": {
+			"title": "Благодарственное письмо",
+			"size": "305 КБт",
+			"link": "doc.pdf"
+		}
+	},
+	{
+		"imgSrc": "sec4-img9.jpg",
+		"head": "Просто сделайте визу заранее, чтобы не пропускать самые интересные события в мире",
+		"name": "Как Светлана - бухгалтер",
+		"text": [
+			""
+		],
+		"videoImg": "sec4-video-bg.jpg",
+		"photoImg": "sec4-photo-bg9.jpg",
 		"doc": {
 			"title": "Благодарственное письмо",
 			"size": "305 КБт",

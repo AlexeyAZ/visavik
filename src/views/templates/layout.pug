@@ -12,12 +12,26 @@ html
         meta(name="description", content="")
         meta(name="viewport", content="width=device-width, initial-scale=1, minimal-ui")
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(property="og:image" content="http://visavik.org/img/logo.jpg")
+        meta(property="og:image:type" content="image/jpeg")
+        meta(property="og:image:height" content="110")
+        meta(property="og:image:width" content="110")
         title #{title}
         link(rel="icon" type="image/png" href="img/favicon.png" sizes="16x16")
         link(rel="stylesheet", href="styles/vendor.css")
         link(rel="stylesheet", href="styles/main.css")
-    </script>
+        script.
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.paren..;})(window,document,'script','dataLayer','GTM-KHCHWHD');
     body
+        //Google Tag Manager (noscript)
+        noscript.
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHCHWHD" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        //End Google Tag Manager (noscript)
+        //Yandex.Metrika counter
+        script(type="text/javascript").
+            (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter46336077 = new Ya.Metrika({ id:46336077, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+        <noscript><div><img src="https://mc.yandex.ru/watch/46336077" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        //Yandex.Metrika counter
         include ../components/security
         include ../components/icons
         include ../components/svg

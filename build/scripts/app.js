@@ -123,13 +123,13 @@ $(function () {
 					galleryItem = "<div class='gallery__item'><div class='gallery__item-container container'>";
 
 					var img = "<div class='gallery__img' style='background-image:url(img/" + data[i].imgSrc + ")'></div>";
-					var videoBlock = "<div class='gallery__video-block'>";
+					var videoBlock = "<a data-form='#modalVideo' data-number=" + i + " class='gallery__video-block'>";
 					var videoHead = "<p class='gallery__video-head'>" + data[i].head + "</p>";
 					var videoName = "<p class='gallery__video-name'>" + data[i].name + "</p>";
-					var videoLink = "<a data-form='#modalVideo' data-number=" + i + " class='gallery__video-link'>";
+					var videoLink = "<span class='gallery__video-link'>";
 					var videoSubtitle = "<span>Читать отзыв целиком</span>";
-					var closeVideoLink = "</a>";
-					var closeVideoBlock = "</div>";
+					var closeVideoLink = "</span>";
+					var closeVideoBlock = "</a>";
 					videoImg = "<span class='gallery__video-img' style='background-image:url(https://img.youtube.com/vi/" + data[i].videoLink + "/0.jpg)'></span>";
 
 					if (data[i].videoLink) {
@@ -377,17 +377,17 @@ $(function () {
 	}
 	initMap();
 
-	function getPage() {
-
-		if (document.querySelector(".thanks")) {
-			return "thanks";
-		} else {
-			return "main";
-		}
-	}
-
 	createGallery(".js-gallery");
 });
+
+function getPage() {
+
+	if (document.querySelector(".thanks")) {
+		return "thanks";
+	} else {
+		return "main";
+	}
+}
 
 window.onload = function () {
 	function getCity() {
@@ -402,5 +402,13 @@ window.onload = function () {
 		}
 	}
 	getCity();
+
+	if (getPage() === 'thanks') {
+		const clickEvent = new MouseEvent('click');
+		const link = document.createElement('a');
+		link.href = 'doc/documents.pdf';
+		link.download = 'Перечень необходимых документов.pdf';
+		link.dispatchEvent(clickEvent);
+	}
 };
 //# sourceMappingURL=app.js.map

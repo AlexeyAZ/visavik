@@ -27,6 +27,13 @@
 		@include media(w768) {
 			font-size: 20px;
 		}
+
+		br {
+			
+			@include media(w768) {
+				display: none;
+			}
+		}
 	}
 
 	&__form {
